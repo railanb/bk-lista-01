@@ -10,7 +10,27 @@
                 - Fórmula: Volume = Altura * Largura * Comprimento
                 - Exemplo de saída: O volume da caixa é 30 unidades cúbicas.*/
 
-            Console.WriteLine("Hello, World!");
+            decimal altura;
+            decimal largura;
+            decimal comprimento;
+            decimal volume;
+
+            Console.WriteLine("## Calcular o volume ##\n");
+
+            Console.WriteLine("Digite a altura: ");
+            altura = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Digite a largura: ");
+            largura = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Digite a comprimentro: ");
+            comprimento = Convert.ToDecimal(Console.ReadLine());
+
+            volume = altura * largura * comprimento;
+
+            Console.WriteLine($"O volume da caixa é {volume} unidades cúbicas");
+
+            Console.ReadKey();
         }
     }
 }
